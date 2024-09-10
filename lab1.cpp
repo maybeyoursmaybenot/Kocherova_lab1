@@ -8,7 +8,7 @@ private:
 	int diameter;
 	bool state;
 public:
-	Parameters_Pipeline(string marker, int length, int diameter, bool state);
+	Pipeline(string marker, int length, int diameter, bool state);
 
 	string GetMarker() const;
 	int GetLength() const;
@@ -21,14 +21,14 @@ private:
 	string name;
 	int dep_count;
 	int dep_count_active;
-	int efficiency_k;
+	float efficiency_k;
 public:
-	Parameters_CompressorStation(string name, int dep_count, int dep_count_active, float efficiency_k);
+	CompressorStation(string name, int dep_count, int dep_count_active, float efficiency_k);
 
 	string GetName() const;
 	int GetDepCount() const;
 	int GetDepCountActive() const;
-	int GetEfficiencyK() const;
+	float GetEfficiencyK() const;
 };
 
 int main() {
